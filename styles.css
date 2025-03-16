@@ -1,0 +1,63 @@
+.title {
+    text-align: center;
+}
+.PerInf{
+    font-family: cursive;
+    border: 10px solid;
+    border-color: gray;
+    background-color: black;
+    padding: 25px;
+    margin: 25px;
+}
+.PerInf .title{
+    color:whitesmoke;
+    padding: 15px;
+    margin: 15px;
+}
+
+.PerInf .parag{
+    color:whitesmoke;
+    text-align: justify;
+    padding: 15px;
+    margin: 15px;
+}
+
+.Skills{
+    font-family: Tahoma;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.Skills .parag{
+    font-family: fantasy;
+    text-align: center;
+}
+
+.table{
+    font-family: arial;
+    border:1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.External{
+    text-align: center;
+}
+
+.link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+.img {
+    height: 150px;
+    width: auto;
+}
