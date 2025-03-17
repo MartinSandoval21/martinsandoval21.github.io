@@ -9,13 +9,13 @@
 <body>
   <div class="PerInf">
     <h1 class="title">Hello</h1>
-    <p class="parag">Mi nombre es Martin Sandoval, actualmente tengo 21 años y estoy en 4to año de Ingenieria Civil Industrial. Me gusta mucho el deporte, especialmente el futbol. 
-      Mi equipo favorito es Colo Colo, trato de ir siempre al estadio a alentar al campeón. Me gustan los videojuegos, escuchar musica y ver series.
+    <p class="parag">My name is Martin Sandoval, I am currently 21 years old and I am in my 4th year of Industrial Civil Engineering. I like sports very much, especially soccer. 
+      My favorite team is Colo Colo, I always try to go to the stadium to cheer for the champion. I like video games, listen to music and watch series.
     </p>
   </div>
   <div class="Skills">
-    <h3 class="title">Tabla</h3>
-    <p class="parag"> Alguna de mis skills</p>
+    <h3 class="title">Skills</h3>
+    <p class="parag"> In this table I am going to show you some of my computer software skills.</p>
     <table class="table">
       <tr>
         <td><b>Skill</b></td>
@@ -49,14 +49,30 @@
   </div>
 
   <div class="External">
-    <h5 class="title">Imagen y link</h5>
-    <a href="https://www.eldatoferreteria.cl" class="link">Visit my family bussines</a>
+    <h3 class="title">Link & Image</h3>
+    <a href="https://github.com/MartinSandoval21" class="link">Visit my github profile</a>
     <img src="Esteban.jpg" class="img">
 
   </div>
 
   <div class="But">
-    <h6 class="title">Boton</h6>
+    <h3 class="title">Button</h3>
+      <form>
+        <input class="user" type="text" placeholder="Text Here!" id="input">
+        <input type="button" value="Update" onclick="updateSection()">
+      </form>
+    
+  
+    <div id="output">
+      <p class="parag">This section will change.</p>
+    </div>
+  
+    <script>
+      function updateSection() {
+        const inputValue = document.getElementById('input').value;
+        document.getElementById('output').textContent = inputValue;
+      }
+    </script>
   </div>
 </body>
 </html>
