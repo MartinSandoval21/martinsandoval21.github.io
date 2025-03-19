@@ -1,3 +1,4 @@
+
 .title {
     text-align: center;
 }
@@ -23,6 +24,7 @@
 }
 
 .Skills{
+    text-align: center;
     font-family: Tahoma;
     width: 60%;
     margin: 20px auto;
