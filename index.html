@@ -10,7 +10,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="PerInf">
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MS7</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Info">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Skills&Link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#News">News</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="PerInf" id="Info">
     <h1 class="title">Hello</h1>
     <p class="parag">My name is Martin Sandoval, I am currently 21 years old and I am in my 4th year of Industrial Civil Engineering. I like sports very much, especially soccer. 
       My favorite team is Colo Colo, I always try to go to the stadium to cheer for the champion. I like video games, listen to music and watch series.
@@ -18,7 +43,7 @@
   </div>
 
 
-  <div class="container-xl">
+  <div class="container-xl" id="Skills&Link">
     <div class="row align-items-start">
       <div class="col">
         <div class="Skills" >
@@ -69,16 +94,27 @@
 
       <div class="col">
         <div class="But" class="Skills">
-          <h3 class="title">Button</h3>
+          <h3 class="btn btn-outline-danger">Button</h3>
             <form>
               <input class="user" type="text" placeholder="Text Here!" id="input">
               <input type="button" value="Update" onclick="updateSection()">
             </form>
+            
+            <p class="But">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                Show text
+              </button>
+            </p>
+            <div style="min-height: 120px;">
+              <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <div class="card card-body" style="width: 350px;">
+                  <div id="output">
+                    <p class="parag">This section will change.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           
-        
-          <div id="output">
-            <p class="parag">This section will change.</p>
-          </div>
         
           <script>
             function updateSection() {
@@ -91,6 +127,24 @@
       
     </div>
   </div>
+
+  <div class="container text-center" id="News">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3" id="newsContainer">
+        <div class="col d-none" id="newsTemplate">
+            <div class="card text-bg-dark mb-3">
+                <div class="card-body text-danger">
+                    <h5 class="card-title" id="newsTitle">Título de la Noticia</h5>
+                    <h6 class="card-subtitle mb-2 text-muted" id="newsSource">Fuente</h6>
+                    <p class="card-text news-description" id="newsDescription">Descripción breve de la noticia...</p>
+                    <a href="#" class="btn btn-outline-info" id="newsLink">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="news.js"></script>
 
   <footer>
     <p>&copy;WESTTT</p>
