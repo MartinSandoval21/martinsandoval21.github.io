@@ -1,9 +1,7 @@
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const apiKey = "8d014bc28424490bb22d105a34490895";
-    const category = "health"; 
-    const url = `https://newsapi.org/v2/top-headlines?category=${category}&apiKey=${apiKey}&pageSize=10`;
+    const url = `https://newsapi.org/v2/top-headlines?category=Sports&apiKey=8d014bc28424490bb22d105a34490895&pageSize=10`;
 
     fetch(url)
         .then(response => response.json())
